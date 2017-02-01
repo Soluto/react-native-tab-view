@@ -1,5 +1,5 @@
 /* @flow */
-
+'no babel-plugin-flow-react-proptypes';
 export type GestureEvent = {
   nativeEvent: {
     changedTouches: Array<*>;
