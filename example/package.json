@@ -3,14 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@exponent/vector-icons": "^4.0.0",
     "exponent": "~13.1.1-rc.1",
     "react": "~15.4.2",
     "react-native": "git+https://github.com/exponentjs/react-native.git#sdk-13.0.0",
-    "react-native-tab-view": "file:../"
+    "react-native-tab-view": "file:../",
+    "snyk": "^1.316.1"
   },
-  "main": "main.js"
+  "main": "main.js",
+  "snyk": true
 }
